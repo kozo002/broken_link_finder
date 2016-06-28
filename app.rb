@@ -18,7 +18,7 @@ ActiveRecord::Base.establish_connection(
 
 ActiveRecord::Migration.create_table :pages do |t|
   t.string  :url
-  t.string  :status
+  t.integer  :status
 end
 
 class Page < ActiveRecord::Base
